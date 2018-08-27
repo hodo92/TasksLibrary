@@ -1,0 +1,24 @@
+.carouselContainer {
+  height: 400px;
+  width: 400px;
+  margin: auto ; 
+}
+
+.taskName {
+  font-family: 'Acme', sans-serif;
+  font-size: large;
+  background-color: none ; 
+  color: white  !important;
+}
+
+.taskDescription{
+  font-family: 'Acme', sans-serif;
+  font-size: large;
+  background-color: none ; 
+  color: white !important;
+}
+
+button{
+     margin: 100px; 
+}
+

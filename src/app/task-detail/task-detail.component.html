@@ -1,0 +1,65 @@
+<div class="taskDetails" *ngIf="task">
+  <div>
+  {{task.taskName}}
+  </div>
+  <br>
+  <br>
+  <button pButton type="button"  label="Back To List" (click)="goBack()"></button>
+  <br>
+  
+  <br>
+  <div class="tasks"  [ngSwitch]="task.taskId">
+    <div  class="answers" *ngSwitchCase="'0'">
+      <h1>First Answer</h1>
+      <ul class="sortedData">
+        <li *ngFor="let countryData of windRes">
+           <div>
+             <span class="country"> {{countryData.country}} </span>
+             <br>
+             <br>
+             <span class="city"> {{countryData.city}}</span>
+             <br>
+             <br>
+           </div>
+        </li>
+      </ul>
+    </div>
+    <div class="answers" *ngSwitchCase="'1'">
+      <h1>Second Answer</h1>
+      <br>
+      <br>
+       The code is a less code with run time modifications
+      <br>
+      for box color.
+    </div>
+    <div *ngSwitchCase="'2'">
+      <h1> Third Answer</h1>
+      <h2>cat</h2>
+      <img alt="grumpy cat" src='{{task.associatedFile}}'>
+    </div>
+    <div *ngSwitchCase="'3'">
+      <h1>Fourth Answer</h1>
+      
+      <br>
+      <br>
+      <div class="answers">
+        1.The design is ugly and old . 
+        <br>
+        2.The data not design properly for UX and UI-too much data for a SPA.
+        <br>
+        3.The photos are small.
+        <br>
+        4.The user cant find specifics things.
+        <br>
+      </div>
+    <img alt="sloppy design" src="{{task.associatedFile}}">
+    <div>
+
+      </div>
+    </div>
+    <div *ngSwitchDefault>
+      this is the default value
+    </div>
+  </div>
+</div>
+

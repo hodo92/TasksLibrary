@@ -1,0 +1,22 @@
+
+<br>
+<br>
+<div class="carouselContainer">
+<ngb-carousel *ngIf="tasks">
+    <ng-template ngbSlide *ngFor="let task of tasks">
+        <a class="taskName">{{task.taskName}}</a>
+    <br>
+    <br>
+    <a class="taskDescription">{{task.description}}</a>
+    <br>
+    <br>
+    <div *ngIf="currentPath === '/tasks'"></div>
+    <button pButton type="button" label="click for the answer" routerLink="/detail/{{task.taskId}}"></button>
+    </ng-template>
+</ngb-carousel>
+</div>
+
+
+
+
+
