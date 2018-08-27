@@ -11,8 +11,8 @@
   <div class="tasks"  [ngSwitch]="task.taskId">
     <div  class="answers" *ngSwitchCase="'0'">
       <h1>First Answer</h1>
-      <ul class="sortedData">
-        <li *ngFor="let countryData of windRes">
+      <div class="sortedData">
+        <span *ngFor="let countryData of windRes">
            <div>
              <span class="country"> {{countryData.country}} </span>
              <br>
@@ -21,8 +21,8 @@
              <br>
              <br>
            </div>
-        </li>
-      </ul>
+        </span>
+    </div>
     </div>
     <div class="answers" *ngSwitchCase="'1'">
       <h1>Second Answer</h1>

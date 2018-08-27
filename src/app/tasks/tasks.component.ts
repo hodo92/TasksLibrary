@@ -20,7 +20,7 @@ export class TasksComponent implements OnInit {
 
   ngOnInit() {
     this.getTasks();
-    console.log(this.currentPath);
+    
   }
 }
 

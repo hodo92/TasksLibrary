@@ -1,12 +1,13 @@
 .city {
   font-size: large;
   color: white ; 
+  font-family: "Roboto", "Trebuchet MS", Arial, Helvetica, sans-serif; 
+
 
 }
 
 .country{
-  font-family: "Monotype Corsiva", sans-serif;
-  font-size: x-large;
+font-family: "Roboto", "Trebuchet MS", Arial, Helvetica, sans-serif; 
   color: white ; 
   font-weight: bold;
 }
