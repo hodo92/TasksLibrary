@@ -14,8 +14,12 @@ font-family: "Roboto", "Trebuchet MS", Arial, Helvetica, sans-serif;
 
 .answers{
    color: white ; 
-   text-align: left !important  ; 
+   
+}
 
+.answers3{
+    color: white ; 
+    text-align: left !important  ; 
 }
 
 .taskDetails {
